@@ -5,10 +5,10 @@ div{
 .card{
     background-color: #87cefa;
     border-left: 5px solid #0c52bc;
-    margin: 10px;
+    margin: 5px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     width: 500px;
     height: 300px;

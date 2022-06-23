@@ -1,7 +1,7 @@
-import HelloWorld from './HelloWorld';
 import Button from './Button';
 import SayName from './SayName';
 import Perfil from './Perfil';
+import Title from './Title';
 function App() {
 
     const lista_pessoas = [
@@ -25,7 +25,7 @@ function App() {
 
   return(
     <div>
-      <HelloWorld />
+      <Title />
       {/* <Button cor="#ffff00" frase="Confirmar"/>
       <Button cor="#00ff00" frase="Recusar"/> */}
       <SayName nome = " love"/>

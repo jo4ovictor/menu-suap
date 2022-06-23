@@ -12,7 +12,8 @@ function Perfil({nome, foto, idade}){
     
     return(
         <div className="card">
-            <p></p>
+            <p className="date"> 10/06/2022</p>
+            <p className="noticia">aluno passa no enem</p>
         </div>
     );
 
