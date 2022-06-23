@@ -1,42 +1,30 @@
 import HelloWorld from './HelloWorld';
 import Button from './Button';
 import SayName from './SayName';
-import Perfil from './Perfil';
+import Noticia from './Noticia';
 function App() {
 
-    const lista_pessoas = [
+    const lista_noticias = [
       {
-        nome:"Karen",
-        idade:"18",
-        foto:"https://picsum.photos/600",
+        hour: "28/05/2022 09:01",
+        description: "Estão abertas as inscrições para Projetos de Ensino"
       },
       {
-        nome:"Igor",
-        idade:"18",
-        foto:"https://picsum.photos/600",
+        hour: "28/05/2022 09:00",
+        description: "Estão abertas as inscrições para Projetos de Pesquisa"
       },
       {
-        nome:"meu 3eirão",
-        idade:"18+",
-        foto:"https://picsum.photos/600",
-      }
-
+        hour: "27/05/2022 13:32",
+        description: "Manutenção do Sistema SUAP acontece nesta sexta-feira(27)"
+      },  
     ];
 
   return(
     <div>
       <HelloWorld />
-      {/* <Button cor="#ffff00" frase="Confirmar"/>
-      <Button cor="#00ff00" frase="Recusar"/> */}
-      <SayName nome = " love"/>
-      <Perfil foto ="https://picsum.photos/600" nome="Mario" idade={17}/>
-
-      { lista_pessoas.map( (pessoa) => {
-        return <Perfil 
-                    foto={pessoa.foto} 
-                    nome={pessoa.nome}
-                    idade={pessoa.idade}
-                />
+      
+      { lista_noticias.map( (noticia) => {
+        return <Noticia horario={noticia.hour} desc={noticia.description}/>
       } ) }
 
     </div>

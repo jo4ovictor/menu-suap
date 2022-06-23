@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Button from "./Button";
-import "./Perfil.css";
+import "./Noticia.css";
 
-function Perfil({nome, foto, idade}){
+function Noticia({horario, desc}){
     const [numeroVizu, setNumeroVizu] = useState(0);
 
 
@@ -12,9 +12,10 @@ function Perfil({nome, foto, idade}){
     
     return(
         <div className="card">
-            <p></p>
+            <p className="data">{horario}</p>
+            <p className="desc">{desc}</p>
         </div>
     );
 
 }
-export default Perfil;
+export default Noticia;
