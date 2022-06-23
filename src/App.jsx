@@ -1,4 +1,4 @@
-import HelloWorld from './HelloWorld';
+import Title from './Title';
 import Button from './Button';
 import Noticia from './Noticia';
 import "./App.css"
@@ -21,7 +21,7 @@ function App() {
 
   return(
     <div className='container'>
-      <HelloWorld />
+      <Title />
       
       { lista_noticias.map( (noticia) => {
         return <Noticia horario={noticia.hour} desc={noticia.description}/>
